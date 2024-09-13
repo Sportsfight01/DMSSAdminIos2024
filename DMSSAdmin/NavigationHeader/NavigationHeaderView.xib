@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationHeaderView" customModule="DMSSAdmin" customModuleProvider="target">
+            <connections>
+                <outlet property="baseView" destination="gSq-jj-lQG" id="fQY-nw-fsD"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="jfd-Pb-iVZ"/>
+                <outlet property="menuBTN" destination="0xW-dR-Xf1" id="o4w-pS-aoS"/>
+                <outlet property="titleLBL" destination="H6R-5X-qMG" id="GfU-QR-RLg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="740" height="392"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSq-jj-lQG">
+                    <rect key="frame" x="0.0" y="0.0" width="740" height="392"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DMSS ADMIN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6R-5X-qMG">
+                            <rect key="frame" x="154" y="50" width="432" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="432" id="QUv-vr-8q8"/>
+                                <constraint firstAttribute="height" constant="58" id="hiK-YI-7pS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xW-dR-Xf1">
+                            <rect key="frame" x="20" y="61.666666666666657" width="51" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="51" id="fPG-2M-GAb"/>
+                                <constraint firstAttribute="height" constant="35" id="fWD-48-hhS"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal">
+                                <imageReference key="image" image="line.3.horizontal" catalog="system" symbolScale="large" variableValue="0.20000000000000007"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="392" id="Pdt-fD-NvT"/>
+                        <constraint firstItem="H6R-5X-qMG" firstAttribute="leading" secondItem="0xW-dR-Xf1" secondAttribute="trailing" constant="83" id="TzL-a8-fbc"/>
+                        <constraint firstItem="H6R-5X-qMG" firstAttribute="centerX" secondItem="gSq-jj-lQG" secondAttribute="centerX" id="W0s-hk-5l8"/>
+                        <constraint firstItem="H6R-5X-qMG" firstAttribute="top" secondItem="gSq-jj-lQG" secondAttribute="top" constant="50" id="gNq-tJ-fE5"/>
+                        <constraint firstItem="0xW-dR-Xf1" firstAttribute="centerY" secondItem="H6R-5X-qMG" secondAttribute="centerY" id="xEC-Oo-TbX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="gSq-jj-lQG" secondAttribute="top" constant="59" id="ASY-7h-Lmu"/>
+                <constraint firstItem="gSq-jj-lQG" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="34" id="CAz-aD-VeF"/>
+                <constraint firstItem="gSq-jj-lQG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vPh-ED-ccO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gSq-jj-lQG" secondAttribute="trailing" id="vhq-ml-cb9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="300.76335877862596" y="-163.38028169014086"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

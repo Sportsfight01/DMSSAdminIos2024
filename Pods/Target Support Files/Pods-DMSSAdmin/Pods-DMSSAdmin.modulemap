@@ -1,0 +1,6 @@
+framework module Pods_DMSSAdmin {
+  umbrella header "Pods-DMSSAdmin-umbrella.h"
+
+  export *
+  module * { export * }
+}
