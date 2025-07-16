@@ -10,6 +10,8 @@
 		33BBCC1E1EF25C638E4225EC /* Pods_DMSSAdmin_DMSSAdminUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCF72B8C44BA80DE91741FD /* Pods_DMSSAdmin_DMSSAdminUITests.framework */; };
 		4FB67FD6E3852B7CE0A72C2C /* Pods_DMSSAdminTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD32AE3AE5AA445B23F784CE /* Pods_DMSSAdminTests.framework */; };
 		85D578F3AE7C3BDDC2773551 /* Pods_DMSSAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C93187E9F521BD9DC274FCA /* Pods_DMSSAdmin.framework */; };
+		A10F7D852C980EF3006C81A8 /* DatePickerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F7D842C980EF3006C81A8 /* DatePickerClass.swift */; };
+		A10F7D872C9A9444006C81A8 /* DatabaseRLMFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F7D862C9A9444006C81A8 /* DatabaseRLMFile.swift */; };
 		A1174C832C881AE800393EAA /* TaskListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1174C812C881AE800393EAA /* TaskListTVC.swift */; };
 		A1174C842C881AE800393EAA /* TaskListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1174C822C881AE800393EAA /* TaskListTVC.xib */; };
 		A15B80492C86D8CB00E367D3 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B80482C86D8CB00E367D3 /* AppColors.swift */; };
@@ -18,6 +20,8 @@
 		A15B80542C86EBD600E367D3 /* NavigationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15B80532C86EBD600E367D3 /* NavigationHeaderView.xib */; };
 		A15B80562C86EE3100E367D3 /* BaseNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B80552C86EE3100E367D3 /* BaseNavVC.swift */; };
 		A15B80582C8713F800E367D3 /* PantryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B80572C8713F800E367D3 /* PantryVC.swift */; };
+		A165DB672CCA16D900BD2203 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = A165DB662CCA16D900BD2203 /* SideMenu */; };
+		A165DB6A2CCA1B6F00BD2203 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A165DB692CCA1B6F00BD2203 /* SideMenuVC.swift */; };
 		A18AE8782C90576C002B2F63 /* SwiftXLSX in Frameworks */ = {isa = PBXBuildFile; productRef = A18AE8772C90576C002B2F63 /* SwiftXLSX */; };
 		A18AE87A2C914AD1002B2F63 /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18AE8792C914AD1002B2F63 /* DataViewModel.swift */; };
 		A1D6274A2C859E9700AF6850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D627492C859E9700AF6850 /* AppDelegate.swift */; };
@@ -34,6 +38,7 @@
 		A1D6277F2C85B35C00AF6850 /* DataModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6277E2C85B35C00AF6850 /* DataModule.swift */; };
 		A1D627822C85C1D600AF6850 /* DashboardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D627802C85C1D600AF6850 /* DashboardCVC.swift */; };
 		A1D627832C85C1D600AF6850 /* DashboardCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D627812C85C1D600AF6850 /* DashboardCVC.xib */; };
+		A1F441B82CCA7ACA00110F7D /* AddMembersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F441B72CCA7ACA00110F7D /* AddMembersVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,8 @@
 		7361346AFF7666649396ED1B /* Pods-DMSSAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMSSAdmin.debug.xcconfig"; path = "Target Support Files/Pods-DMSSAdmin/Pods-DMSSAdmin.debug.xcconfig"; sourceTree = "<group>"; };
 		7D11236D9C73A59A1806EA46 /* Pods-DMSSAdminTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMSSAdminTests.debug.xcconfig"; path = "Target Support Files/Pods-DMSSAdminTests/Pods-DMSSAdminTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7FCF72B8C44BA80DE91741FD /* Pods_DMSSAdmin_DMSSAdminUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMSSAdmin_DMSSAdminUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10F7D842C980EF3006C81A8 /* DatePickerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerClass.swift; sourceTree = "<group>"; };
+		A10F7D862C9A9444006C81A8 /* DatabaseRLMFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseRLMFile.swift; sourceTree = "<group>"; };
 		A1174C812C881AE800393EAA /* TaskListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListTVC.swift; sourceTree = "<group>"; };
 		A1174C822C881AE800393EAA /* TaskListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskListTVC.xib; sourceTree = "<group>"; };
 		A15B80482C86D8CB00E367D3 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
@@ -67,6 +74,7 @@
 		A15B80532C86EBD600E367D3 /* NavigationHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationHeaderView.xib; sourceTree = "<group>"; };
 		A15B80552C86EE3100E367D3 /* BaseNavVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavVC.swift; sourceTree = "<group>"; };
 		A15B80572C8713F800E367D3 /* PantryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryVC.swift; sourceTree = "<group>"; };
+		A165DB692CCA1B6F00BD2203 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		A18AE8792C914AD1002B2F63 /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
 		A1D627462C859E9700AF6850 /* DMSSAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMSSAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D627492C859E9700AF6850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +94,7 @@
 		A1D6277E2C85B35C00AF6850 /* DataModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModule.swift; sourceTree = "<group>"; };
 		A1D627802C85C1D600AF6850 /* DashboardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCVC.swift; sourceTree = "<group>"; };
 		A1D627812C85C1D600AF6850 /* DashboardCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCVC.xib; sourceTree = "<group>"; };
+		A1F441B72CCA7ACA00110F7D /* AddMembersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMembersVC.swift; sourceTree = "<group>"; };
 		AB34C85F0D1C937386E91D9C /* Pods-DMSSAdminTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMSSAdminTests.release.xcconfig"; path = "Target Support Files/Pods-DMSSAdminTests/Pods-DMSSAdminTests.release.xcconfig"; sourceTree = "<group>"; };
 		C1464E9E39DC319753183998 /* Pods-DMSSAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMSSAdmin.release.xcconfig"; path = "Target Support Files/Pods-DMSSAdmin/Pods-DMSSAdmin.release.xcconfig"; sourceTree = "<group>"; };
 		CAEEEDC2BE52E0780913D575 /* Pods-DMSSAdmin-DMSSAdminUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMSSAdmin-DMSSAdminUITests.debug.xcconfig"; path = "Target Support Files/Pods-DMSSAdmin-DMSSAdminUITests/Pods-DMSSAdmin-DMSSAdminUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A18AE8782C90576C002B2F63 /* SwiftXLSX in Frameworks */,
+				A165DB672CCA16D900BD2203 /* SideMenu in Frameworks */,
 				85D578F3AE7C3BDDC2773551 /* Pods_DMSSAdmin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +149,7 @@
 			children = (
 				A15B80482C86D8CB00E367D3 /* AppColors.swift */,
 				A15B804B2C86EA3A00E367D3 /* ViewExtensions.swift */,
+				A10F7D842C980EF3006C81A8 /* DatePickerClass.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,6 +193,15 @@
 			path = NavigationHeader;
 			sourceTree = "<group>";
 		};
+		A165DB682CCA1B4A00BD2203 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A165DB692CCA1B6F00BD2203 /* SideMenuVC.swift */,
+				A1F441B72CCA7ACA00110F7D /* AddMembersVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		A1D6273D2C859E9700AF6850 = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +227,7 @@
 		A1D627482C859E9700AF6850 /* DMSSAdmin */ = {
 			isa = PBXGroup;
 			children = (
+				A165DB682CCA1B4A00BD2203 /* Controllers */,
 				A15B80502C86EB9000E367D3 /* NavigationHeader */,
 				A15B804F2C86EA9900E367D3 /* StoryBoards */,
 				A15B804E2C86EA8300E367D3 /* CustomViews */,
@@ -220,6 +241,7 @@
 				A1D627552C859E9900AF6850 /* Assets.xcassets */,
 				A1D6275A2C859E9900AF6850 /* Info.plist */,
 				A1D627522C859E9700AF6850 /* DMSSAdmin.xcdatamodeld */,
+				A10F7D862C9A9444006C81A8 /* DatabaseRLMFile.swift */,
 			);
 			path = DMSSAdmin;
 			sourceTree = "<group>";
@@ -271,6 +293,7 @@
 			name = DMSSAdmin;
 			packageProductDependencies = (
 				A18AE8772C90576C002B2F63 /* SwiftXLSX */,
+				A165DB662CCA16D900BD2203 /* SideMenu */,
 			);
 			productName = DMSSAdmin;
 			productReference = A1D627462C859E9700AF6850 /* DMSSAdmin.app */;
@@ -349,6 +372,7 @@
 			mainGroup = A1D6273D2C859E9700AF6850;
 			packageReferences = (
 				A18AE8762C90576C002B2F63 /* XCRemoteSwiftPackageReference "SwiftXLSX" */,
+				A165DB652CCA16D900BD2203 /* XCRemoteSwiftPackageReference "SideMenu" */,
 			);
 			productRefGroup = A1D627472C859E9700AF6850 /* Products */;
 			projectDirPath = "";
@@ -499,6 +523,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F441B82CCA7ACA00110F7D /* AddMembersVC.swift in Sources */,
+				A10F7D872C9A9444006C81A8 /* DatabaseRLMFile.swift in Sources */,
 				A15B80582C8713F800E367D3 /* PantryVC.swift in Sources */,
 				A1D6274E2C859E9700AF6850 /* ViewController.swift in Sources */,
 				A15B80522C86EBC700E367D3 /* NavigationHeaderView.swift in Sources */,
@@ -509,8 +535,10 @@
 				A15B804C2C86EA3A00E367D3 /* ViewExtensions.swift in Sources */,
 				A15B80562C86EE3100E367D3 /* BaseNavVC.swift in Sources */,
 				A1D627822C85C1D600AF6850 /* DashboardCVC.swift in Sources */,
+				A10F7D852C980EF3006C81A8 /* DatePickerClass.swift in Sources */,
 				A15B80492C86D8CB00E367D3 /* AppColors.swift in Sources */,
 				A1D6274C2C859E9700AF6850 /* SceneDelegate.swift in Sources */,
+				A165DB6A2CCA1B6F00BD2203 /* SideMenuVC.swift in Sources */,
 				A1D6277F2C85B35C00AF6850 /* DataModule.swift in Sources */,
 				A18AE87A2C914AD1002B2F63 /* DataViewModel.swift in Sources */,
 			);
@@ -869,6 +897,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A165DB652CCA16D900BD2203 /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
 		A18AE8762C90576C002B2F63 /* XCRemoteSwiftPackageReference "SwiftXLSX" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/3973770/SwiftXLSX";
@@ -880,6 +916,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A165DB662CCA16D900BD2203 /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A165DB652CCA16D900BD2203 /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
 		A18AE8772C90576C002B2F63 /* SwiftXLSX */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A18AE8762C90576C002B2F63 /* XCRemoteSwiftPackageReference "SwiftXLSX" */;

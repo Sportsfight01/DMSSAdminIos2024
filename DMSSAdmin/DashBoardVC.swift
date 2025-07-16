@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SideMenu
 
 class DashBoardVC: UIViewController, UICollectionViewDelegate{
     
@@ -17,7 +17,7 @@ class DashBoardVC: UIViewController, UICollectionViewDelegate{
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var baseView: UIView!
-    
+    var menu : SideMenuNavigationController!
     
     var initialIndex : Int = 0
     var currentIndex : Int = 0
@@ -25,6 +25,7 @@ class DashBoardVC: UIViewController, UICollectionViewDelegate{
         super.viewDidLoad()
         setupView()
         collectionView.delegate = self
+        sideMenuSetup()
     }
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
@@ -38,7 +39,26 @@ class DashBoardVC: UIViewController, UICollectionViewDelegate{
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
-    
+    @IBAction func didTappedOnMenu(_ sender: UIButton) {
+        present(menu, animated: true)
+        
+    }
+    func sideMenuSetup()
+    {
+        let sideMenuVc = SideMenuVC.instace(sb: .main)
+        menu = SideMenuNavigationController(rootViewController: sideMenuVc)
+        menu.leftSide = true
+        menu.menuWidth = 0.8 * UIScreen.main.bounds.width
+        menu.presentationStyle = .menuSlideIn
+        menu.presentationStyle.onTopShadowColor = .darkGray
+        menu.presentationStyle.onTopShadowOffset = CGSize(width: 1.0, height: 1.0)
+        menu.presentationStyle.onTopShadowOpacity = 1.0
+        menu.setNavigationBarHidden(true, animated: false)
+        SideMenuManager.default.leftMenuNavigationController = menu
+        SideMenuManager.default.leftMenuNavigationController?.dismissOnPush = false
+        
+        
+    }
     
     func setupView(){
  
@@ -110,6 +130,7 @@ extension DashBoardVC{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if homeScreenData[indexPath.item].type == "3"{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "PantryVC") as! PantryVC
+            vc.pantryImg = homeScreenData[indexPath.item].image
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

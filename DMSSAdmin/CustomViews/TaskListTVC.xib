@@ -53,10 +53,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgm-tw-mEU">
-                                <rect key="frame" x="290" y="10" width="20" height="22"/>
+                                <rect key="frame" x="290" y="10" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="CSW-3R-ymN"/>
+                                    <constraint firstAttribute="height" constant="20" id="Pqm-mZ-Elt"/>
+                                </constraints>
                                 <color key="tintColor" name="App_Color"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="square" catalog="system"/>
+                                <state key="selected" image="checkmark.square.fill" catalog="system"/>
                                 <connections>
                                     <action selector="didTappedOnSelectBTN:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iWV-kA-EBS"/>
                                 </connections>
@@ -111,6 +116,7 @@
     </objects>
     <resources>
         <image name="DMS-AppIcon" width="97" height="97"/>
+        <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
         <image name="square" catalog="system" width="128" height="114"/>
         <namedColor name="App_Color">
             <color red="0.059000000357627869" green="0.48600000143051147" blue="0.76099997758865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

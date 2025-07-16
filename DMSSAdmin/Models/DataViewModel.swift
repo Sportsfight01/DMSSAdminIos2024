@@ -17,8 +17,7 @@ class pantryDataViewModel {
     }
 }
 
-let pantryArr =  [pantryData(categoryName: "Pantry", subname:"office_machine", type: "", date: Date(), status: "", area: "", checkTime: 1),
-                             pantryData(categoryName: "Pantry", subname: "office_machine", type: "", date: Date(), status: "", area: "", checkTime: 1),
+let pantryArr =  [pantryData(categoryName: "Pantry", subname: "office_machine", type: "", date: Date(), status: "", area: "", checkTime: 1),
                              pantryData(categoryName: "Pantry", subname: "water_dispenser", type: "", date: Date(), status: "", area: "", checkTime: 1),
                              pantryData(categoryName: "Pantry", subname: "cupboards", type: "", date: Date(), status: "", area: "", checkTime: 1),
                              pantryData(categoryName: "Pantry", subname: "wooden_frames_glassses", type: "", date: Date(), status: "", area: "", checkTime: 1),

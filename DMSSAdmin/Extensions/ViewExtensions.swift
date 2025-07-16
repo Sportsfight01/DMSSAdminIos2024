@@ -55,3 +55,34 @@ extension UIApplication {
         }
     }
 }
+
+extension UIButton {
+
+    func alignImageRight() {
+        if UIApplication.shared.userInterfaceLayoutDirection == .leftToRight {
+            semanticContentAttribute = .forceRightToLeft
+            imageEdgeInsets = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 0)
+        } else {
+            semanticContentAttribute = .forceLeftToRight
+            imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 15)
+        }
+    }
+}
+
+
+//MARK: - ViewController Instance Creation
+extension UIViewController
+{
+    #warning("must provide proper storyboard name to create viewcontroller instance")
+    static func instace(sb : StoryBoard = .main) -> Self{
+        
+        let instance = UIStoryboard(name: sb.rawValue, bundle: nil).instantiateViewController(withIdentifier: String(describing: self)) as! Self
+        return instance
+    }
+    
+    enum StoryBoard : String
+    {
+        case main = "Main"
+        
+    }
+}

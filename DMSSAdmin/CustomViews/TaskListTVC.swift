@@ -14,9 +14,10 @@ class TaskListTVC: UITableViewCell {
     @IBOutlet weak var taskNameLBL: UILabel!
     @IBOutlet weak var dateLBL: UILabel!
     @IBOutlet weak var statusLBL: UILabel!
-    
     @IBOutlet weak var categoryImage: UIImageView!
     
+    var buttonTapAction: (() -> Void)?
+    var isChecked = false
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,12 +33,28 @@ class TaskListTVC: UITableViewCell {
     func setupData(data : pantryData){
         taskNameLBL.text = data.subname
         areaNameLBL.text = data.area
-        let dateFormat = DateFormatter()
         dateLBL.text = data.date.formatted(date: .numeric, time: .shortened)
         statusLBL.text = data.status
+        isChecked.toggle()
+        if data.status == "pending" || data.status == "pending"{
+            isChecked = true
+            checkMarkBTN.setImage(UIImage(systemName:"checkmark.square.fill"), for: .normal)
+        }else{
+            isChecked = false
+            checkMarkBTN.setImage(UIImage(systemName:"square"), for: .normal)
+
+        }
     }
     @IBAction func didTappedOnSelectBTN(_ sender: UIButton) {
-        
+        buttonTapAction?()
+        isChecked.toggle()
+//               if isChecked {
+//                   // Set to checked state
+//                   sender.setImage(UIImage(systemName: "checkmark.square.fill"), for: .normal)
+//               } else {
+//                   // Set to unchecked state
+//                   sender.setImage(UIImage(systemName:"square"), for: .normal)
+//               }
     }
     
 }

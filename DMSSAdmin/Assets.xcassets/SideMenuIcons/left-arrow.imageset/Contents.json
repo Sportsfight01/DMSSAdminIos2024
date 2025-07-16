@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "public-toilet.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "left-arrow.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
